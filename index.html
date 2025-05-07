@@ -1,12 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Responsive Website</title>
 </head>
 <body>
+
     <nav class="navbar">
+        <div class="logo">MySite</div>
+        <button class="menu-toggle">&#9776;</button>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -14,8 +18,18 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    
-    <h1>WELCOME TO MY WEB SITE I YOU ALL ARE WELL !!!!!!!!!</h1>
-    <img src="myiamge.jpg" alt="">
+
+    <h1>WELCOME TO MY WEBSITE, I HOPE YOU ALL ARE WELL!</h1>
+    <img src="myimage.jpg" alt="Website banner">
+
+    <script>
+        const toggleBtn = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        toggleBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
 </body>
 </html>
